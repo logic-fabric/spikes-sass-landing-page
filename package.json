@@ -1,0 +1,28 @@
+{
+  "name": "vanilla-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass css/scss/main.scss css/main.css",
+    "postcss": "postcss css/main.css -o css/main.min.css",
+    "build": "npm run sass && npm run postcss",
+    "watch": "sass --watch css/scss/main.scss:css/main.css & npm run postcss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/logic-fabric/logic-fabric.git"
+  },
+  "author": "Lowic Mangin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/logic-fabric/logic-fabric/issues"
+  },
+  "homepage": "https://github.com/logic-fabric/logic-fabric#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "cssnano": "^7.0.6",
+    "postcss-cli": "^11.0.0",
+    "sass": "^1.79.3"
+  }
+}
